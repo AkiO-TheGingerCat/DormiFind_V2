@@ -9,7 +9,7 @@ This repository contains the **frontend source code** for **DormiFind V2**, a do
 ## 🛠️ Technologies Used
 
 - **HTML5**
-- **CSS3**
+- **CSS**
 - **Node.js** (used only for backend — not included here)
 
 ---
