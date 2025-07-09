@@ -1,0 +1,134 @@
+.admin-dashboard__container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.admin-dashboard__sidebar {
+  width: 220px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.admin-dashboard__logo {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.admin-dashboard__sidebar button {
+  display: block;
+  margin: 10px 0;
+  padding: 12px 15px;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.admin-dashboard__sidebar button:hover {
+  background-color: #e6e6e6;
+}
+
+.admin-dashboard__content {
+  flex-grow: 1;
+  padding: 10px 40px;
+  overflow-y: auto;
+}
+
+.admin-dashboard__content h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.admin-dashboard__overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.admin-dashboard__stat-box {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.admin-dashboard__stat-box:hover {
+  transform: translateY(-5px);
+}
+
+.admin-dashboard__stat-box h3 {
+  font-size: 36px;
+  margin: 0 0 8px;
+  font-weight: bold;
+}
+
+.admin-dashboard__stat-box p {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.admin-dashboard__developers {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.admin-dashboard__developer-card {
+  text-align: center;
+  width: 180px;
+  background: white;
+  padding: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s;
+  cursor: default;
+}
+
+.admin-dashboard__developer-card:hover {
+  transform: translateY(-5px);
+}
+
+.admin-dashboard__photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid black;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.admin-dashboard__developer-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #34495e;
+}
+
+.admin-dashboard__developer-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #7f8c8d;
+}

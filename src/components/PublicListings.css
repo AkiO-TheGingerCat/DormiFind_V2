@@ -1,0 +1,228 @@
+.listings-page {
+  display: flex;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin-top: 5%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #eee;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sidebar input,
+.sidebar select,
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.sidebar button {
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background-color: darkgreen;
+}
+
+.listings-content {
+  margin-left: 300px;
+  padding: 20px;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.listings-content h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.listing-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.listing-card:hover {
+  transform: scale(1.02);
+}
+
+.listing-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.listing-info {
+  padding: 15px;
+}
+
+.listing-info h2 {
+  margin: 0 0 10px;
+  color: #2c3e50;
+}
+
+.location {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+/* Details Page */
+.listing-details-page {
+  max-width: 9px;
+  margin: 4px 4px;
+  padding: 0 2px;
+}
+
+.back-btn {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  background-color: darkgray;
+}
+
+.listing-details {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.listing-details-info {
+  flex: 2;
+  color: #333;
+}
+
+.listing-details-info h2 {
+  margin-top: 0;
+}
+
+.listing-photos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+}
+
+.detail-photo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.detail-photo:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .listing-details {
+    flex-direction: column;
+  }
+
+  .listing-photos {
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .detail-photo {
+    width: 48%;
+    height: 140px;
+  }
+
+  .listings-content {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    border-right: none;
+    margin-top: 0;
+  }
+}

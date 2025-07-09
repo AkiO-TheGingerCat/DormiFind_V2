@@ -1,0 +1,95 @@
+.listings-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.listings-container h2 {
+  text-align: center;
+  color: #f57c00;
+  margin-bottom: 20px;
+}
+
+.listings-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.form-grid label {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #2e7d32;
+  display: block;
+}
+
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.checkbox-group label {
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.photo-placeholder {
+  height: 100px;
+  background-color: #ffe0b2;
+  border: 2px dashed #f57c00;
+  border-radius: 8px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f57c00;
+  font-weight: 500;
+}
+
+button[type="submit"] {
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #2e7d32;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1b5e20;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

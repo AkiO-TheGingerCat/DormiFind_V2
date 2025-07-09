@@ -1,0 +1,166 @@
+.about-page {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f6f1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.fullscreen-section {
+  min-height: 80vh;
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.fullscreen-section.image-right,
+.fullscreen-section.image-left {
+  flex-direction: row;
+}
+
+.text-content {
+  flex: 1;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.text-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.section-img {
+  flex: 1;
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.developer-section {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-card h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.profile-card p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0.25rem 0;
+}
+
+.team-grid {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: left;
+  max-width: 600px;
+  margin-right: auto;
+}
+
+.team-member {
+  text-align: left;
+  max-width: 150px;
+  font-size: 1rem;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .fullscreen-section {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .text-content,
+  .section-img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .text-content h2 {
+    font-size: 2rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+
+  .profile-card {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .team-grid {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fullscreen-section {
+    padding: 1rem 0.75rem;
+  }
+
+  .text-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .text-content p,
+  .profile-card p {
+    font-size: 0.95rem;
+  }
+
+  .profile-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-member {
+    max-width: 100px;
+  }
+
+  .team-member img {
+    width: 80px;
+    height: 80px;
+  }
+}

@@ -1,0 +1,339 @@
+.homepage-container html {
+  scroll-behavior: smooth;
+}
+
+.homepage-container .hero {
+  position: relative;
+  height: 100vh;
+  padding: 40px 50px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.homepage-container .hero::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.homepage-container .hero-content {
+  position: relative;
+  z-index: 2;
+  margin-top: 1%;
+}
+
+.homepage-container .hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 20px 0;
+}
+
+.homepage-container .welcome {
+  color: lightgreen;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.homepage-container .slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.homepage-container .slide {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: fadeSlideshow 15s infinite;
+  transition: opacity 1s ease-in-out;
+  will-change: opacity;
+}
+
+.homepage-container .slide:nth-child(1) {
+  background-image: url("../assets/homepagebackground1.jpg");
+  animation-delay: 0s;
+}
+
+.homepage-container .slide:nth-child(2) {
+  background-image: url("../assets/homepagebackground2.jpg");
+  animation-delay: 5s;
+}
+
+.homepage-container .slide:nth-child(3) {
+  background-image: url("../assets/homepagebackground3.jpg");
+  animation-delay: 10s;
+}
+
+@keyframes fadeSlideshow {
+  0%, 40%, 100% {
+    opacity: 0;
+  }
+  10%, 30% {
+    opacity: 1;
+  }
+}
+
+.homepage-container .summary-section {
+  min-height: 100vh;
+  padding: 40px 30px;
+  background-color: #f4f4f4;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.homepage-container .summary-section:nth-child(even) {
+  background-color: #fff;
+}
+
+.homepage-container .summary-section h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.homepage-container .summary-section p {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.homepage-container .fullscreen-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.homepage-container .image-right {
+  flex-direction: row;
+}
+
+.homepage-container .image-left {
+  flex-direction: row-reverse;
+}
+
+.homepage-container .fullscreen-section .text-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.homepage-container .fullscreen-section.image-right.reviews-summary {
+  max-width: 500px;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  padding: 0 15px;
+}
+
+.homepage-container .reviews-summary-content {
+  flex: 1 1 100%;
+  max-width: 500px;
+  text-align: left;
+  color: #333;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.homepage-container .featured-review-card {
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border-left: 5px solid #ffb400;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: left;
+  font-style: italic;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  color: #444;
+  position: relative;
+}
+
+.homepage-container .featured-review-card .stars {
+  color: #ffb400;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.homepage-container .featured-review-card .date {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.homepage-container .featured-review-card p.comment {
+  margin-top: 1.2rem;
+  font-style: normal;
+  line-height: 1.4;
+  color: #333;
+}
+
+.homepage-container .featured-review-card::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.homepage-container .review-prompt {
+  margin-top: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.homepage-container .review-button {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.6rem 1.5rem;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.homepage-container .review-button:hover {
+  background-color: orange;
+}
+
+.homepage-container .featured-listings-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 0 30px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.homepage-container .featured-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.homepage-container .featured-text {
+  max-width: 420px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.homepage-container .view-listings-button {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: green;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.homepage-container .view-listings-button:hover {
+  background-color: orange;
+}
+
+@media (max-width: 768px) {
+  .homepage-container .featured-listings-container {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .homepage-container .featured-img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .homepage-container .featured-text {
+    max-width: 100%;
+  }
+
+  .homepage-container .summary-section,
+  .homepage-container .hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .homepage-container .featured-review-card {
+    border-left: none;
+    border-top: 5px solid #ffb400;
+    text-align: left;
+  }
+
+  .homepage-container .featured-review-card .date {
+    position: static;
+    display: block;
+    margin-top: 0.3rem;
+  }
+
+  .homepage-container .fullscreen-section {
+    flex-direction: column !important;
+  }
+
+  .homepage-container .fullscreen-section .text-content,
+  .homepage-container .fullscreen-section img.section-img {
+    max-width: 100%;
+  }
+}
+.homepage-container .contact-button {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: green;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.homepage-container .contact-button:hover {
+  background-color: orange;
+}

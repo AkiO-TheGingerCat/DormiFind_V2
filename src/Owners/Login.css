@@ -1,0 +1,136 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.brand-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.brand-name .dormi {
+  color: orange;
+}
+
+.brand-name .find {
+  color: green;
+  margin-left: 6px;
+}
+
+.login-page {
+  display: flex;
+  height: calc(100vh - 80px);
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+.login-left,
+.login-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-content {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.login-form input {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.login-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: orange;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-divider {
+  text-align: center;
+  margin: 15px 0;
+  color: gray;
+  font-size: 14px;
+}
+
+.google-login {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.register-link {
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-right {
+  background: url("/src/assets/loginphoto.jpg") no-repeat center center/cover;
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: whitesmoke;
+}
+
+.login-form input.input-error {
+  border: 2px solid red !important;
+}
+
+.error-message {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}

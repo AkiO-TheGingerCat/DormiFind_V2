@@ -1,0 +1,132 @@
+.contact-layout {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-image-side {
+  flex: 1;
+  background-image: url("../assets/contactsphoto.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-content {
+  flex: 1;
+  padding: 3rem;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.contact-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-box {
+  background-color: #fff;
+  padding: 1.8rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #34495e;
+}
+
+.contact-info,
+.instructions {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0.5rem 0 1rem;
+}
+
+.contact-info li,
+.instructions li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.email-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px 24px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: #27ae60;
+}
+
+.social-media a {
+  margin-right: 10px;
+  color: #0077cc;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-layout {
+    flex-direction: column;
+  }
+
+  .contact-content {
+    padding: 2rem;
+  }
+
+  .contact-image-side {
+    height: 250px;
+  }
+}
