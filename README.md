@@ -17,4 +17,4 @@ This repository contains the **frontend source code** for **DormiFind V2**, a do
 ---
 <img width="1365" height="767" alt="Image" src="https://github.com/user-attachments/assets/fec11455-f33e-4bc3-a7fe-ee27ebebe606" />
 
-<img width="1365" height="767" alt="Image" src="https://github.com/user-attachments/assets/65a6d5be-76e0-4ebc-bd03-5efa08b46409" />
+<img width="1365" height="765" alt="Image" src="https://github.com/user-attachments/assets/2328f8e3-9d5d-43ac-a1ea-c8e0bd249e6d" />
